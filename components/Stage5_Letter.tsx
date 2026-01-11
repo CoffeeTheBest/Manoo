@@ -88,7 +88,7 @@ export const LetterStage: React.FC = () => {
             Happy 19th, Mahnoor!
         </h1>
 
-        <div className="max-w-xl w-full space-y-6 text-gray-700 font-sans leading-relaxed text-lg md:text-xl relative z-10">
+        <div className="max-w-xl w-full space-y-6 text-gray-800 font-hand leading-relaxed text-xl md:text-2xl relative z-10">
           
           {/* Tape visual */}
           <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-24 h-6 bg-pink-200/50 rotate-1"></div>
@@ -102,7 +102,7 @@ export const LetterStage: React.FC = () => {
           <p>
             Mazak waghera side py, but i really wish k humari dosti aur gehri ho, cuz you're cool and sweet and awesome and kon nahi hoga jisko aap jesa dost chahiye?! itni understanding ho aap me aapko kha jau😋..future ka kuch pata nahi but i wish k wahi ho jo hum dono k liye best ho cuz PTM me bhi to jana hy 😋😝😝 tobah meri apni harkatyn hi kharab hy tch tch tch tch... kher me baaz nahi aau ga 😔.
           </p>
-          <p className="font-bold text-pink-500 font-hand text-2xl">
+          <p className="font-bold text-pink-500 text-2xl md:text-3xl">
             CHALO AB BIRTHDAY ENJOY KARO aur cake mujhy bhi send kar dena parcel karky (box me khud bhi beth jana 😋😋😋)
           </p>
         </div>
@@ -169,10 +169,10 @@ export const LetterStage: React.FC = () => {
                                 <h3 className="text-2xl font-bold text-rose-500 font-hand mb-2">
                                     {COUPONS[couponIndex].title}
                                 </h3>
-                                <p className="text-gray-600 font-sans leading-snug">
+                                <p className="text-gray-600 font-hand text-xl leading-snug">
                                     {COUPONS[couponIndex].desc}
                                 </p>
-                                <div className="mt-4 text-xs text-pink-300 font-bold uppercase tracking-widest">
+                                <div className="mt-4 text-xs text-pink-300 font-bold uppercase tracking-widest font-sans">
                                     Tap to see next
                                 </div>
                             </motion.div>
