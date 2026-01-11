@@ -1,0 +1,7 @@
+{
+  "name": "Mahnoor's 19th Birthday",
+  "description": "A cute, interactive birthday experience for Mahnoor turning 19, featuring mini-games, AI wishes, and a virtual cake.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
