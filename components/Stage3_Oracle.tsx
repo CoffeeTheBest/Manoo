@@ -19,14 +19,14 @@ export const OracleStage: React.FC<Props> = ({ onNext }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-full p-8 max-w-md mx-auto">
+    <div className="flex flex-col items-center justify-center min-h-full p-6 md:p-8 max-w-md mx-auto">
       <motion.div
         animate={{ 
           y: [0, -10, 0],
           rotate: [0, 2, -2, 0]
         }}
         transition={{ duration: 4, repeat: Infinity }}
-        className="text-8xl mb-6"
+        className="text-7xl md:text-8xl mb-6"
       >
         🐱
       </motion.div>
@@ -49,10 +49,10 @@ export const OracleStage: React.FC<Props> = ({ onNext }) => {
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="bg-white p-6 rounded-2xl shadow-xl border-2 border-pink-100 mb-8 relative"
+          className="bg-white p-6 rounded-2xl shadow-xl border-2 border-pink-100 mb-8 relative w-full"
         >
           <div className="text-4xl absolute -top-5 -left-5">🔮</div>
-          <p className="text-xl font-hand text-gray-700 leading-relaxed">
+          <p className="text-lg md:text-xl font-hand text-gray-700 leading-relaxed">
             "{prediction}"
           </p>
         </motion.div>
