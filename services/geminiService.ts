@@ -6,15 +6,15 @@ export const getBirthdayOracle = async (): Promise<string> => {
   try {
     const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
-      contents: "Write a short, meaningful, Shakespearean-style free verse poem for Mahnoor who is turning 19 today. It does not need to rhyme, but should sound wise, elegant, and whimsical. Focus on her beauty, spirit, and the magic of youth. Keep it under 50 words. Use emojis.",
+      contents: "Write a short, funny, and specific prediction for Mahnoor's 19th birthday. She loves Mobile Legends (MLBB), cats, and food. Write it in the voice of her close desi best friend: casual, use Roman Urdu slang (like 'yaar', 'sachi', 'scene', 'bas', 'kasam se'). Lowercase. No punctuation at the end. Roast her slightly. Strictly NO generic AI words like 'unleash', 'embrace', 'sparkle'. Max 1 emoji. Topics: losing ranked matches because of feeding, cats ignoring her, or eating too much biryani. Example: 'yaar knowing you, you're gonna hit mythic today only to lose it tomorrow'",
       config: {
-        temperature: 1,
+        temperature: 1.2,
       }
     });
 
-    return response.text || "Nineteen springs hath graced thy spirit bright, / Like stars that dance upon the velvet night. / May joy pursue thee, swift as morning light, / And fortune bless thee with its golden might. ✨🌹🌙";
+    return response.text || "yaar you're gonna get that savage in mlbb today, bas lag na karwana 🎮";
   } catch (error) {
     console.error("Gemini Oracle Error:", error);
-    return "The stars align to sing of thy grace, / A new year dawns upon thy lovely face. 🌟✨";
+    return "the cat distribution system finally found you, mubarak ho 🐱";
   }
 };
